@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //TODO: popup a dialog box to get the intial number of tables
-
+        //TODO: manage table number and make it auto genereted, for queries purpose
     }
 
     @Override
