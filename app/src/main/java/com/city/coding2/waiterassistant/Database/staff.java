@@ -46,6 +46,10 @@ public class staff {
         return staff_id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setStaff_name(String staff_name) {
         this.staff_name = staff_name;
     }

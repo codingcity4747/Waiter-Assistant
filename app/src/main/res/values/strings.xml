@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">WaiterAssistant</string>
+    <string name="app_name">Assistant</string>
 
     <string name="tableNum">Table</string>
     <string name="guestNum">Guest</string>
+    <string name="add_icon">Add</string>
 
 </resources>

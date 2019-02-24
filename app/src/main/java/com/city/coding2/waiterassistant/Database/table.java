@@ -24,21 +24,39 @@ public class table {
 
     private String join_with ;
 
-    public void setIs_locked(boolean is_locked) {
+
+    public table(int table_number, int guest_number, int table_capacity, boolean table_status, boolean is_locked, boolean is_join, String join_with) {
+        this.table_number = table_number;
+        this.guest_number = guest_number;
+        this.table_capacity = table_capacity;
+        this.table_status = table_status;
         this.is_locked = is_locked;
-    }
-
-    public void setIs_join(boolean is_join) {
         this.is_join = is_join;
+        this.join_with = join_with;
     }
 
-    public void setJoin_with(String join_with) {
-        this.join_with = join_with;
+    public int getId() {
+        return id;
+    }
+
+    public int getTable_number() {
+        return table_number;
+    }
+
+    public int getGuest_number() {
+        return guest_number;
+    }
+
+    public int getTable_capacity() {
+        return table_capacity;
+    }
+
+    public boolean isTable_status() {
+        return table_status;
     }
 
     public boolean isIs_locked() {
         return is_locked;
-
     }
 
     public boolean isIs_join() {
@@ -49,46 +67,35 @@ public class table {
         return join_with;
     }
 
-    public table(int tableNum, int tableGuestNum, int tableCapacity, boolean tableState
-                  , boolean is_locked, boolean is_join, String join_with) {
-        this.table_number = tableNum;
-        this.guest_number = tableGuestNum;
-        this.table_capacity = tableCapacity;
-        this.table_status = tableState;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTable_number(int table_number) {
+        this.table_number = table_number;
+    }
+
+    public void setGuest_number(int guest_number) {
+        this.guest_number = guest_number;
+    }
+
+    public void setTable_capacity(int table_capacity) {
+        this.table_capacity = table_capacity;
+    }
+
+    public void setTable_status(boolean table_status) {
+        this.table_status = table_status;
+    }
+
+    public void setIs_locked(boolean is_locked) {
         this.is_locked = is_locked;
-        this.is_join= is_join;
+    }
+
+    public void setIs_join(boolean is_join) {
+        this.is_join = is_join;
+    }
+
+    public void setJoin_with(String join_with) {
         this.join_with = join_with;
-    }
-
-    public int getTableNum() {
-        return table_number;
-    }
-
-    public int getTableGuestNum() {
-        return guest_number;
-    }
-
-    public int getTableCapacity() {
-        return table_capacity;
-    }
-
-    public boolean isTableState() {
-        return table_status;
-    }
-
-    public void setTableNum(int tableNum) {
-        this.table_number = tableNum;
-    }
-
-    public void setTableGuestNum(int tableGuestNum) {
-        this.guest_number = tableGuestNum;
-    }
-
-    public void setTableCapacity(int tableCapacity) {
-        this.table_capacity = tableCapacity;
-    }
-
-    public void setTableState(boolean tableState) {
-        this.table_status = tableState;
     }
 }
