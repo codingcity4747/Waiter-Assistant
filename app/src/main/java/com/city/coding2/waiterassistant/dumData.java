@@ -1,5 +1,7 @@
 package com.city.coding2.waiterassistant;
 
+import com.city.coding2.waiterassistant.Database.table;
+
 import java.util.ArrayList;
 
 public class dumData {

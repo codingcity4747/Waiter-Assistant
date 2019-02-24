@@ -20,6 +20,8 @@ android {
 
 dependencies {
 
+    def lifecycle_version = "2.0.0"
+    def room_version = "2.1.0-alpha04"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
@@ -28,4 +30,15 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.2-alpha01'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.2-alpha01'
     implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha02'
+
+    //arch component dependencies
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //design
+    implementation "com.google.android.material:material:1.0.0-rc01"
+
+    //cardView
+    implementation "androidx.cardview:cardview:1.0.0"
 }
