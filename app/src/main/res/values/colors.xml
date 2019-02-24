@@ -13,4 +13,5 @@
 
     <!--custom style color-->
     <color name ="green">#4CAF50</color>
+    <color name="gray">#C9C2C2</color>
 </resources>

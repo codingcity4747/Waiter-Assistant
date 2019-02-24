@@ -26,4 +26,7 @@ public interface tableDao {
 
     @Query ("DELETE FROM tables_table")
      void deleteAllTables();
+
+    @Query("UPDATE tables_table SET table_status = :tableStatus")
+     void updateTableStatus(boolean tableStatus);
 }

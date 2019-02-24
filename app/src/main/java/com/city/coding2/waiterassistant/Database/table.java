@@ -25,7 +25,9 @@ public class table {
     private String join_with ;
 
 
-    public table(int table_number, int guest_number, int table_capacity, boolean table_status, boolean is_locked, boolean is_join, String join_with) {
+    public table(int table_number, int guest_number, int table_capacity,
+                 boolean table_status, boolean is_locked, boolean is_join,
+                 String join_with) {
         this.table_number = table_number;
         this.guest_number = guest_number;
         this.table_capacity = table_capacity;
